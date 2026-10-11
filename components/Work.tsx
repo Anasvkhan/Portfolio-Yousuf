@@ -28,7 +28,7 @@ export default function Work() {
             return (
               <motion.div key={w.name} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-40px" }} transition={{ duration: 0.5, delay: 0.04 * (i % 5) }} className="border-t border-ink/15">
                 <button onClick={() => setOpen(isOpen ? -1 : i)} aria-expanded={isOpen} className="group relative flex w-full items-center gap-4 py-6 text-left sm:gap-8 sm:py-8">
-                  <motion.span aria-hidden className="absolute inset-0 -mx-4 origin-left rounded-2xl bg-ink sm:-mx-6" initial={false} animate={{ scaleX: isOpen ? 1 : 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} />
+                  <motion.span aria-hidden className="absolute inset-0 -mx-3 origin-left rounded-2xl bg-ink sm:-mx-6" initial={false} animate={{ scaleX: isOpen ? 1 : 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} />
                   <span className={`relative w-8 font-mono text-sm transition-colors ${isOpen ? "text-paper/60" : "text-muted"}`}>{String(i + 1).padStart(2, "0")}</span>
                   <span className={`relative flex-1 font-display text-2xl font-bold tracking-tight transition-all duration-300 sm:text-4xl ${isOpen ? "translate-x-2 text-paper" : "group-hover:translate-x-2"}`}>{w.name}</span>
                   <span className={`relative hidden rounded-full border px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wider sm:block ${isOpen ? "border-paper/30 text-paper/80" : "border-ink/20 text-ink/70"}`}>{w.tag}</span>
