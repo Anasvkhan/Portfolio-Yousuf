@@ -58,26 +58,27 @@ export default function Hero() {
           {/* arch portrait + dashboard card */}
           <motion.div style={{ y: archY }} className="relative mx-auto w-full max-w-[400px]">
             <motion.div initial={{ opacity: 0, scale: 0.9, y: 40 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: 1, delay: 0.5, ease }} className="relative">
-              <div className="absolute -inset-3 rounded-t-[999px] rounded-b-[2rem] border border-ink/15" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-t-[999px] rounded-b-[1.6rem] bg-ink">
-                <Headshot className="h-full w-full" />
+              <div className="relative aspect-[690/1015]">
+                <div className="absolute inset-x-[3%] bottom-0 h-[80%] rounded-t-[999px] rounded-b-[2rem] bg-gradient-to-b from-accent via-[#3b7bff] to-[#9cc0ff] shadow-[0_30px_80px_rgba(37,99,235,0.35)]" />
+                <div className="absolute inset-x-[-1%] bottom-[-2%] h-[82%] rounded-t-[999px] rounded-b-[2.2rem] border border-accent/25" />
+                <Headshot className="absolute inset-0 h-full w-full" />
               </div>
 
               {/* rotating badge */}
-              <motion.div animate={{ rotate: 360 }} transition={{ duration: 22, ease: "linear", repeat: Infinity }} className="absolute -left-4 top-12 grid h-28 w-28 place-items-center rounded-full bg-lime shadow-lg sm:-left-8 sm:h-32 sm:w-32 xl:-left-14">
+              <motion.div animate={{ rotate: 360 }} transition={{ duration: 22, ease: "linear", repeat: Infinity }} className="absolute -right-2 top-16 grid h-28 w-28 place-items-center rounded-full bg-lime shadow-lg sm:-right-6 sm:h-32 sm:w-32 xl:-right-10">
                 <svg viewBox="0 0 120 120" className="h-full w-full">
                   <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                   <text fontSize="10.5" fontFamily="var(--font-jetbrains)" letterSpacing="2.4" fill="#0a1b4d" fontWeight="600">
-                    <textPath href="#circ">META ADS • GOOGLE ADS • PPC • GROWTH •</textPath>
+                    <textPath href="#circ">META ADS • GOOGLE ADS • PPC •</textPath>
                   </text>
                 </svg>
               </motion.div>
-              <div className="pointer-events-none absolute -left-4 top-12 grid h-28 w-28 place-items-center sm:-left-8 sm:h-32 sm:w-32 xl:-left-14">
+              <div className="pointer-events-none absolute -right-2 top-16 grid h-28 w-28 place-items-center sm:-right-6 sm:h-32 sm:w-32 xl:-right-10">
                 <span className="serif-i text-3xl">SY</span>
               </div>
             </motion.div>
 
-            <motion.div style={{ y: cardY }} className="absolute -bottom-8 -right-3 w-[240px] sm:-right-4 sm:w-[270px] xl:-right-6">
+            <motion.div style={{ y: cardY }} className="absolute -bottom-6 -left-3 w-[240px] sm:-left-8 sm:w-[270px] xl:-left-16">
               <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 1.3, ease }} className="rounded-2xl border border-ink/10 bg-paper p-4 shadow-[0_24px_60px_rgba(16,17,20,0.18)]">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-muted">Gilani Traders · Google Ads</span>

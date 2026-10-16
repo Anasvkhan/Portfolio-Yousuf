@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-/** Shows /headshot.jpg from /public; falls back to a monogram if the file isn't there yet. */
+/** Cut-out portrait from /public/yousuf.png; falls back to a monogram if the file is missing. */
 export default function Headshot({ className = "" }: { className?: string }) {
   const [failed, setFailed] = useState(false);
   const ref = useRef<HTMLImageElement>(null);
@@ -14,11 +14,11 @@ export default function Headshot({ className = "" }: { className?: string }) {
 
   if (failed) {
     return (
-      <div className={`grid place-items-center bg-ink ${className}`}>
-        <span className="serif-i text-8xl text-paper">SY</span>
+      <div className={`grid place-items-center ${className}`}>
+        <span className="serif-i text-8xl text-accent">SY</span>
       </div>
     );
   }
   // eslint-disable-next-line @next/next/no-img-element
-  return <img ref={ref} src="/headshot.jpg" alt="Portrait of Syed Yousuf Hussain" onError={() => setFailed(true)} className={`object-cover object-top ${className}`} />;
+  return <img ref={ref} src="/yousuf.png" alt="Portrait of Syed Yousuf Hussain" onError={() => setFailed(true)} className={`object-contain object-bottom ${className}`} />;
 }
