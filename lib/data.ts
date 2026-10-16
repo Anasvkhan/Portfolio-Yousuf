@@ -113,7 +113,7 @@ export const education = [
   {
     school: "Iqra University",
     degree: "Master of Business Management",
-    when: "Expected completion — June 2026",
+    when: "Completed",
   },
   {
     school: "University of Karachi",

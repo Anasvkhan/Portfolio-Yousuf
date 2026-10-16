@@ -26,8 +26,8 @@ export default function Navbar() {
       className="fixed inset-x-0 top-4 z-[100] px-4"
     >
       <nav className="mx-auto flex max-w-[860px] items-center justify-between rounded-full border border-ink/10 bg-paper/80 py-2 pl-6 pr-2 shadow-[0_8px_30px_rgba(16,17,20,0.08)] backdrop-blur-xl">
-        <a href="#top" className="font-display text-lg font-extrabold tracking-tight">
-          SYH<span className="text-accent">/</span>
+        <a href="#top" className="whitespace-nowrap font-display text-base font-extrabold tracking-tight sm:text-lg">
+          Syed Yousuf Hussain
         </a>
 
         <ul className="relative hidden items-center gap-1 md:flex">
@@ -36,13 +36,13 @@ export default function Navbar() {
               {active === l.href && (
                 <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-full bg-ink/8" transition={{ type: "spring", stiffness: 380, damping: 32 }} />
               )}
-              <a href={l.href} className="relative block px-4 py-2 text-sm font-medium text-ink/70 transition hover:text-ink">{l.label}</a>
+              <a href={l.href} className="relative block px-3 py-2 text-sm font-medium lg:px-4 text-ink/70 transition hover:text-ink">{l.label}</a>
             </li>
           ))}
         </ul>
 
         <div className="flex items-center gap-2">
-          <a href={`mailto:${profile.email}`} className="group hidden items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-accent sm:inline-flex">
+          <a href={`mailto:${profile.email}`} className="group hidden items-center gap-1.5 whitespace-nowrap rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-accent sm:inline-flex">
             Let&apos;s Talk <ArrowUpRight size={15} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
           <button aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((v) => !v)} className="grid h-10 w-10 place-items-center rounded-full bg-ink text-paper md:hidden">
