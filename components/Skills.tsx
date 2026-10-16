@@ -15,7 +15,7 @@ const style = [
   "lg:col-span-2 bg-ink text-paper",
   "bg-lime",
   "bg-paper-2",
-  "bg-accent text-ink",
+  "bg-accent text-white",
   "bg-paper-2",
   "lg:col-span-2 bg-ink text-paper",
   "lg:col-span-2 bg-lime",

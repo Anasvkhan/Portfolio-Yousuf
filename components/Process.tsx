@@ -28,7 +28,7 @@ export default function Process() {
               whileHover={{ x: 8 }}
               className={`flex gap-6 rounded-3xl p-7 sm:p-9 ${i % 3 === 0 ? "bg-ink text-paper" : i % 3 === 1 ? "bg-paper-2" : "bg-lime"}`}
             >
-              <span className="outline-text font-display text-6xl font-extrabold leading-none sm:text-7xl">{String(i + 1).padStart(2, "0")}</span>
+              <span className="font-display text-6xl font-extrabold leading-none opacity-25 sm:text-7xl">{String(i + 1).padStart(2, "0")}</span>
               <div>
                 <h3 className="font-display text-2xl font-bold tracking-tight">{p.title}</h3>
                 <p className="mt-2 max-w-[520px] leading-relaxed opacity-70">{p.text}</p>

@@ -24,7 +24,7 @@ export default function Marquee() {
 
   const row = [...words, ...words];
   return (
-    <div aria-hidden className="relative z-10 -my-1 rotate-[-1.5deg] overflow-hidden bg-accent py-5 text-paper shadow-[0_10px_40px_rgba(255,91,36,0.3)]">
+    <div aria-hidden className="relative z-10 -my-1 rotate-[-1.5deg] overflow-hidden bg-accent py-5 text-paper shadow-[0_10px_40px_rgba(37,99,235,0.3)]">
       <motion.div style={{ x }} className="flex w-max whitespace-nowrap">
         {[0, 1].map((k) => (
           <div key={k} className="flex shrink-0 items-center">

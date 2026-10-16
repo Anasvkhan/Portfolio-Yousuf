@@ -28,7 +28,7 @@ export default function Education() {
               <h3 className="relative font-display text-2xl font-bold tracking-tight transition-colors group-hover:text-paper sm:pl-4 sm:text-3xl">{e.school}</h3>
               <p className="relative text-muted transition-colors group-hover:text-paper/75">{e.degree}</p>
               <div className="relative flex items-center gap-3 sm:pr-4">
-                <span className="font-mono text-xs text-accent">{e.when}</span>
+                <span className="font-mono text-xs text-accent transition-colors group-hover:text-sky">{e.when}</span>
                 <ArrowUpRight size={18} className="hidden text-paper opacity-0 transition-opacity group-hover:opacity-100 sm:block" />
               </div>
             </motion.div>

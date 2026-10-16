@@ -67,7 +67,7 @@ export default function Hero() {
               <motion.div animate={{ rotate: 360 }} transition={{ duration: 22, ease: "linear", repeat: Infinity }} className="absolute -left-4 top-12 grid h-28 w-28 place-items-center rounded-full bg-lime shadow-lg sm:-left-8 sm:h-32 sm:w-32 xl:-left-14">
                 <svg viewBox="0 0 120 120" className="h-full w-full">
                   <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
-                  <text fontSize="10.5" fontFamily="var(--font-jetbrains)" letterSpacing="2.4" fill="#101114" fontWeight="600">
+                  <text fontSize="10.5" fontFamily="var(--font-jetbrains)" letterSpacing="2.4" fill="#0a1b4d" fontWeight="600">
                     <textPath href="#circ">META ADS • GOOGLE ADS • PPC • GROWTH •</textPath>
                   </text>
                 </svg>
@@ -77,7 +77,7 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            <motion.div style={{ y: cardY }} className="absolute -bottom-8 -right-3 w-[240px] sm:-right-4 sm:w-[270px] xl:-right-16">
+            <motion.div style={{ y: cardY }} className="absolute -bottom-8 -right-3 w-[240px] sm:-right-4 sm:w-[270px] xl:-right-6">
               <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 1.3, ease }} className="rounded-2xl border border-ink/10 bg-paper p-4 shadow-[0_24px_60px_rgba(16,17,20,0.18)]">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-muted">Gilani Traders · Google Ads</span>

@@ -45,7 +45,7 @@ export default function Contact() {
         <Reveal><Label light>Contact</Label></Reveal>
         <h2 className="mt-8 font-display text-[clamp(2.8rem,8.5vw,7.5rem)] font-extrabold leading-[0.92] tracking-[-0.045em]">
           <Reveal>Let&apos;s build your</Reveal>
-          <Reveal delay={0.1}><span className="serif-i text-accent">next campaign.</span></Reveal>
+          <Reveal delay={0.1}><span className="serif-i text-sky">next campaign.</span></Reveal>
         </h2>
 
         <div className="mt-14 grid items-end gap-12 lg:grid-cols-[1fr_auto]">
@@ -56,7 +56,7 @@ export default function Contact() {
             </p>
           </Reveal>
           <Magnetic>
-            <a href={`mailto:${profile.email}`} className="grid h-40 w-40 place-items-center rounded-full bg-accent text-center font-display text-lg font-bold text-ink transition-colors hover:bg-lime sm:h-48 sm:w-48">
+            <a href={`mailto:${profile.email}`} className="grid h-40 w-40 place-items-center rounded-full bg-accent text-center font-display text-lg font-bold text-white transition-colors hover:bg-lime hover:text-ink sm:h-48 sm:w-48">
               <span className="flex flex-col items-center gap-1">Contact Me <ArrowUpRight size={26} /></span>
             </a>
           </Magnetic>
@@ -73,9 +73,9 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 * i, duration: 0.6 }}
               whileHover={{ y: -4 }}
-              className="flex items-center gap-3 break-all rounded-2xl border border-paper/15 px-6 py-5 font-mono text-sm transition-colors hover:border-lime hover:bg-paper/5"
+              className="flex items-center gap-3 break-all rounded-2xl border border-paper/20 px-6 py-5 font-mono text-sm transition-colors hover:border-sky hover:bg-paper/5"
             >
-              <span className="shrink-0 text-lime">{l.icon}</span>
+              <span className="shrink-0 text-sky">{l.icon}</span>
               {l.label}
             </motion.a>
           ))}
@@ -86,9 +86,9 @@ export default function Contact() {
       <div className="relative mt-24 overflow-hidden border-t border-paper/10 py-8" aria-hidden>
         <motion.div animate={{ x: ["0%", "-50%"] }} transition={{ duration: 45, ease: "linear", repeat: Infinity }} className="flex w-max whitespace-nowrap">
           {loop.map((b, i) => (
-            <span key={i} className="flex items-center text-paper/35">
-              <span className="outline-text font-display text-5xl font-extrabold uppercase tracking-tight sm:text-7xl">{b}</span>
-              <span className="mx-8 text-3xl text-accent">✺</span>
+            <span key={i} className="flex items-center text-paper/12">
+              <span className="font-display text-5xl font-extrabold uppercase tracking-tight sm:text-7xl">{b}</span>
+              <span className="mx-8 text-3xl text-sky">✺</span>
             </span>
           ))}
         </motion.div>
