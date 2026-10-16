@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-/** Shows /headshot.png from /public; falls back to a monogram if the file isn't there yet. */
+/** Shows /headshot.jpg from /public; falls back to a monogram if the file isn't there yet. */
 export default function Headshot({ className = "" }: { className?: string }) {
   const [failed, setFailed] = useState(false);
   const ref = useRef<HTMLImageElement>(null);
@@ -20,5 +20,5 @@ export default function Headshot({ className = "" }: { className?: string }) {
     );
   }
   // eslint-disable-next-line @next/next/no-img-element
-  return <img ref={ref} src="/headshot.png" alt="Portrait of Syed Yousuf Hussain" onError={() => setFailed(true)} className={`object-cover object-top ${className}`} />;
+  return <img ref={ref} src="/headshot.jpg" alt="Portrait of Syed Yousuf Hussain" onError={() => setFailed(true)} className={`object-cover object-top ${className}`} />;
 }
